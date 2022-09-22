@@ -1,0 +1,35 @@
+.navBar {
+  position: fixed;
+  z-index: 12;
+
+  &__content {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    height: 100px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+  }
+
+  &__black {
+    background-color: black;
+  }
+
+  &__element {
+    position: fixed;
+    width: auto;
+    height: 60px;
+    cursor: pointer;
+  }
+
+  &__logo {
+    top: 20px;
+    left: 20px;
+  }
+
+  &__avatar {
+    top: 20px;
+    right: 20px;
+  }
+}
