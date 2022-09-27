@@ -1,0 +1,38 @@
+.row {
+  padding: 0.8rem 2rem;
+
+  &__title {
+    color: white;
+    margin-bottom: 1.4rem;
+  }
+
+  &__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 0.6rem 0;
+  }
+
+  &__posters::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__poster {
+    max-height: 150px;
+    width: 100%;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transform 450ms;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.08);
+      opacity: 1;
+    }
+  }
+
+  &__posterLarge {
+    max-height: 300px;
+    width: 100%;
+  }
+}
